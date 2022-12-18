@@ -36,7 +36,8 @@ public class FirstSeleniumScript {
 		emailInputField.sendKeys("iron.man@gmail.com");
 		passwordInputField.sendKeys("avengers.com");
 		loginBtn.click();
-
+		
+		
 		String titleOfPage = wd.getTitle();
 
 		Assert.assertEquals(titleOfPage, "My Account", "User is not signed in");
